@@ -1,0 +1,55 @@
+.Nav{
+    display: flex;
+    width: 100vw;
+    background-color: rgb(41, 39, 39);
+    justify-content: space-between;
+}
+
+.Nav >img{
+    justify-content: flex-start;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.Nav_Tab_Container{
+   text-decoration: none;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+}
+
+.Nav_Tab_Container li{
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(41, 39, 39);
+    color: white;
+    cursor: pointer;
+    padding: 0 2rem;
+}
+
+.Nav_Tab_Container li:hover{
+    background-color: rgb(36, 63, 63);
+}
+
+
+@media screen and (min-width:700px) {
+    .Nav_Tab_Container{
+        flex-direction: row;
+     }
+     
+     .Nav_Tab_Container li{
+         font-size: 16px;
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: rgb(41, 39, 39);
+         color: white;
+         cursor: pointer;
+         padding: 0 2rem;
+     }
+}
