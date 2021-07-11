@@ -7,7 +7,7 @@ function Hero(){
     return(
         <div className="Hero">
             <div className="Hero_Container">
-                <h1>Invest In the Future </h1>
+                <h1></h1>
                 <GiantCoin />
             </div>
         </div>

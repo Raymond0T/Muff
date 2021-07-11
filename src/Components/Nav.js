@@ -1,18 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Nav.css';
 import logo from '../Images/logo.png';
+import MobileMenu from './MobileMenu';
+import {FaBars} from 'react-icons/fa';
+
+
+
+
 
 function Nav(){
+
+    const [menu, setMenu] = useState(false);
+
+    const toggleMenu = ()=>{
+        setMenu(!menu);
+        console.log(menu);
+    };
+
     return(
         <div className="Nav">
-            <img src={logo} height="50" width="75"/>
-            <ul className="Nav_Tab_Container">
-                <li>Home</li>
-                <li>About</li>
-                <li>Buy Coin</li>
-                <li>Documentation</li>
-            </ul>
-        </div>
+            {menu && <MobileMenu toggle={toggleMenu} style={{display: menu ? "flex" : "none" }}/> }
+            
+                <img src={logo} height="50" width="75"/>
+                <FaBars className="Nav_Hamburger" onClick={toggleMenu}/>
+                
+                <ul className="Nav_Tab_Container">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Buy Coin</li>
+                    <li>Documentation</li>
+                </ul>
+            </div>
+       
     );
 }
 
