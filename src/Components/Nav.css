@@ -1,7 +1,7 @@
 
 .Nav{
     display: flex;
-    width: 100vw;
+    width: 100%;
     background-color: rgb(41, 39, 39);
     justify-content: space-between;
 }
@@ -11,7 +11,7 @@
     color:white;
     display: flex;
     margin-right: 1.75rem;
-    margin-top: 0.75rem;
+    margin-top: 1.5rem;
     font-size: 40px;
 }
 .Nav >img{
