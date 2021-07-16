@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import './Hero.css';
 import TempLarge from '../Images/logo-large.png';
 import TempMed from '../Images/logo-medium.png';
-import TempImg from '../Images/logo.png';
+import TempImg from '../Images/bank-img.jpg';
 import HeroBackground from '../Images/hero-img.jpg';
 import HeroVideo from '../Images/hero-vid.mp4';
+
+import {FaArrowRight} from 'react-icons/fa';
 
 function Hero(){
 
@@ -60,10 +62,20 @@ function Hero(){
                 {second && 
                     <div className="Hero_Col_1">
                         <h1 className="Hero_TextAnimation_Two"> Muffle <br/> Coin</h1>
+                        <div className="Hero_Button_Container">
+                            <button className="Hero_Button">
+                                <h2>Learn <br/>More </h2>
+                                <FaArrowRight className="Hero_ArrowIcon"/>
+                            </button>
+                            <button className="Hero_Button">
+                                <h2>Purchase <br/> Coin</h2>
+                                <FaArrowRight className="Hero_ArrowIcon"/>
+                            </button>
+                        </div>
                     </div>
-                }
+                ||<div className="Hero_Col_1"></div>}
                 <div className="Hero_Col_2">
-                   
+                    <img src={TempImg} alt="img"/>
                 </div>
             </div>
         </div>

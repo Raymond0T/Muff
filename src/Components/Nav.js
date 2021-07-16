@@ -21,7 +21,7 @@ function Nav(){
         <div className="Nav">
             {menu && <MobileMenu toggle={toggleMenu} style={{display: menu ? "flex" : "none" }}/> }
             
-                <img src={logo} height="75" width="75"/>
+                <img src={logo} height="50" width="50"/>
                 <FaBars className="Nav_Hamburger" onClick={toggleMenu}/>
                 
                 <ul className="Nav_Tab_Container">

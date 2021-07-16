@@ -2,53 +2,46 @@
     width: 100%;
     height: 100%;
     background-color: rgb(0, 0, 0);
-
 }
-#Hero_video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index: 0;
-    filter: blur(5px);
-}
+/*Position all hero children with z-index of 10 */
 .Hero > *{
     position: relative;
     z-index: 10;
 }
+#Hero_video{
+    width: 98%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+    filter: blur(5px) contrast(500%);
+}
 
-/*font-size: clamp(1rem, 8vw, 20rem)*/
+/*Styling for everything on top of the hero background video */
 .Hero_Container{
     display: flex;
     justify-content: space-between;
-    align-items: start;
-    padding: 0 3rem;
+    align-items: center;
 }
 
-.Hero_Col_1{
-    width: 60%;
-    float: left;
-}
-.Hero_Col_2{
-   width: 40%;
-}
-
-.Hero_Col_2 img{
-   
-    border-radius: 50%;
-    box-shadow: inset 0 0 25px 5px red;
-}
-
- h1{
+h1{
     color: white;
+    width: 100%;
     text-align: center;
     padding: 3rem 0;
     margin: 0;
-    font-size: clamp(1rem, 3.75vw, 3.75rem);
+    font-size: clamp(1rem, 5vw, 3.75rem);
     letter-spacing: 5px;
-    word-spacing: 16px;
+    word-spacing: 12px;
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
+}
+
+/*Everything for Column 1 starts here*/
+.Hero_Col_1{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
 }
   
 .Hero_TextAnimation_One span span {
@@ -60,14 +53,62 @@
 }
 
 .Hero_TextAnimation_Two{
-    font-size: clamp(1rem, 8vw, 20rem);
+    font-size: clamp(2.75rem, 8vw, 20rem);
     animation: animate_text_Two 2000ms forwards;
     transform: scale(1.25);
     float: left;
     line-height: 95%;
-    padding-left: 1rem;
 }
-  
+.Hero_Button_Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0.5rem;
+}
+.Hero_Button{
+    font-size: 8px;
+    padding: 0 0.5rem;
+    padding-left: 0.75rem;
+    background-color: rgb(36, 63, 63);
+    color: white;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.25rem;
+    border-radius: 10px;
+    animation: animate_text_Two 2000ms forwards;
+}
+.Hero_Button h2{
+    margin: 0.25rem 0;
+}
+.Hero_Button:hover{
+    background-color: rgb(29, 117, 233);
+}
+
+.Hero_Button:hover .Hero_ArrowIcon{
+    animation: movingArrow 500ms ease-in-out infinite;
+}
+.Hero_ArrowIcon{
+    padding-left: 0.5rem;
+    font-size: 12px;
+}
+
+/*
+-Column 1 styling ends here
+-Column 2 styling starts here
+*/
+.Hero_Col_2{
+    width: 40%;
+ }
+ .Hero_Col_2 img{
+     width: 600px;
+     height: 400px;
+     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+ }
+ 
   @keyframes animate_text_One {
       0% {
           bottom: -0.2em;
@@ -95,6 +136,26 @@
       }
   }
   
-  @media screen and (max-width: 500px) {
-    
+  @keyframes movingArrow{
+      0%{
+          transform: translateX(0);
+      }
+      50%{
+        transform: translateX(40%);
+      }
+      100%{
+        transform: translateX(0);
+      }
   }
+
+  @media screen and (min-width: 700px) {
+    .Hero_Button{
+        font-size: 16px;
+        padding: 0 1.5rem;
+        margin: 0 1rem;
+    }
+    .Hero_ArrowIcon{
+        font-size: 24px;
+    }
+  }
+  

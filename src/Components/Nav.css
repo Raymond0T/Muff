@@ -2,20 +2,20 @@
 .Nav{
     display: flex;
     width: 100%;
-    background-color: rgb(41, 39, 39);
-    justify-content: space-between;
+    background-color: #000000;
+    justify-content: center;
 }
 
 .Nav_Hamburger{
     cursor: pointer;
     color:white;
-    display: flex;
-    margin-right: 1.75rem;
-    margin-top: 1.5rem;
-    font-size: 40px;
+    position: absolute;
+    right:0;
+    top:0;
+    transform: translate(-50%,50%);
+    font-size: 32px;
 }
 .Nav >img{
-    justify-content: flex-start;
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
@@ -34,7 +34,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(41, 39, 39);
     color: white;
     cursor: pointer;
     padding: 0 2rem;
@@ -45,25 +44,13 @@
 }
 
 
-@media screen and (min-width:700px) {
+@media screen and (min-width:700px) {   
     .Nav_Hamburger{
         display: none;
     }
     .Nav_Tab_Container{
         display: flex;
         flex-direction: row;
-     }
-     
-     .Nav_Tab_Container li{
-         font-size: 16px;
-         height: 100%;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         background-color: rgb(41, 39, 39);
-         color: white;
-         cursor: pointer;
-         padding: 0 2rem;
      }
 }
 
