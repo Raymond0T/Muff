@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './Hero.css';
-import TempLarge from '../Images/logo-large.png';
-import TempMed from '../Images/logo-medium.png';
-import TempImg from '../Images/bank-img.jpg';
+import HeroImgLarge from '../Images/img-two-650.png';
+import HeroImgMedium from '../Images/img-two-450.png';
+import HeroImgSmall from '../Images/img-two-300.png';
 import HeroBackground from '../Images/hero-img.jpg';
 import HeroVideo from '../Images/hero-vid.mp4';
 
-import {FaArrowRight} from 'react-icons/fa';
+import {IoIosArrowForward} from 'react-icons/io';
 
 function Hero(){
 
@@ -32,6 +32,8 @@ function Hero(){
 
 
     /*
+    <video autoPlay loop muted src={HeroVideo} type="video/mp4" id="Hero_video"></video>
+            
                 <img src={TempImg} 
                         srcSet={`${TempMed} 375w, ${TempLarge} 600w`} alt="img"
                         sizes="(max-width:700px) 375w, (max-width) 600w"
@@ -40,7 +42,6 @@ function Hero(){
 
     return(
         <div className="Hero">
-            <video autoPlay loop muted src={HeroVideo} type="video/mp4" id="Hero_video"></video>
             
             {first && 
                 <h1 className="Hero_TextAnimation_One">
@@ -59,23 +60,26 @@ function Hero(){
             }
             
             <div className="Hero_Container" >
-                {second && 
+                {(second && 
                     <div className="Hero_Col_1">
                         <h1 className="Hero_TextAnimation_Two"> Muffle <br/> Coin</h1>
                         <div className="Hero_Button_Container">
                             <button className="Hero_Button">
                                 <h2>Learn <br/>More </h2>
-                                <FaArrowRight className="Hero_ArrowIcon"/>
+                                <IoIosArrowForward className="Hero_ArrowIcon"/>
                             </button>
                             <button className="Hero_Button">
                                 <h2>Purchase <br/> Coin</h2>
-                                <FaArrowRight className="Hero_ArrowIcon"/>
+                                <IoIosArrowForward className="Hero_ArrowIcon"/>
                             </button>
                         </div>
-                    </div>
+                    </div>)
                 ||<div className="Hero_Col_1"></div>}
                 <div className="Hero_Col_2">
-                    <img src={TempImg} alt="img"/>
+                    <img src={HeroImgSmall}  srcSet={`${HeroImgSmall} 300w, ${HeroImgMedium} 800w, ${HeroImgLarge} 1600w`}
+                    sizes="(min-width:700px), 100vw"
+                        alt="img"
+                    />
                 </div>
             </div>
         </div>
