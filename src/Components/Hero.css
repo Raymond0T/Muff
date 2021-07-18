@@ -77,7 +77,6 @@ h1{
     background-color: var(--secondary-color);
     color: white;
     border: 0;
-    box-shadow: 0 0 15px var(--main-color);
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -110,7 +109,27 @@ h1{
     width: 100%;
     display: none;
  }
+ .Hero_Col_2::after{
+     content:"";
+     position: absolute;
+     bottom: 0;
+     height: 1%;
+     width: 15%;
+     box-shadow: 0px 25px 25px black,0px 40px 40px black,0px 60px 60px black;
+     
+ }
+ .Hero_Col_2 img{
+    animation: coin_rotation 5000ms linear infinite;
+ }
 
+ @keyframes coin_rotation {
+     0%{
+         transform:  perspective(1000px) rotateY(0deg);
+     }
+     100%{
+         transform:  perspective(1000px) rotateY(360deg);
+     }
+ }
  
   @keyframes animate_text_One {
       0% {

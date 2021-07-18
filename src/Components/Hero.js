@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './Hero.css';
-import HeroImgLarge from '../Images/img-two-650.png';
-import HeroImgMedium from '../Images/img-two-450.png';
-import HeroImgSmall from '../Images/img-two-300.png';
-import HeroBackground from '../Images/hero-img.jpg';
-import HeroVideo from '../Images/hero-vid.mp4';
+import HeroImgLarge from '../Images/hero-img-500.png';
+import HeroImgMedium from '../Images/hero-img-300.png';
+import HeroImgSmall from '../Images/hero-img-200.png';
+
 
 import {IoIosArrowForward} from 'react-icons/io';
 
@@ -34,9 +33,9 @@ function Hero(){
     /*
     <video autoPlay loop muted src={HeroVideo} type="video/mp4" id="Hero_video"></video>
             
-                <img src={TempImg} 
-                        srcSet={`${TempMed} 375w, ${TempLarge} 600w`} alt="img"
-                        sizes="(max-width:700px) 375w, (max-width) 600w"
+                <img src={HeroImgSmall}  srcSet={`${HeroImgSmall} 300w, ${HeroImgMedium} 800w, ${HeroImgLarge} 1600w`}
+                    sizes="(min-width:700px), 100vw"
+                        alt="img"
                     />
     */
 
@@ -77,7 +76,7 @@ function Hero(){
                 ||<div className="Hero_Col_1"></div>}
                 <div className="Hero_Col_2">
                     <img src={HeroImgSmall}  srcSet={`${HeroImgSmall} 300w, ${HeroImgMedium} 800w, ${HeroImgLarge} 1600w`}
-                    sizes="(min-width:700px), 100vw"
+                        sizes="(min-width:700px), 100vw"
                         alt="img"
                     />
                 </div>

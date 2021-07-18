@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Nav.css';
-import logo from '../Images/logo.png';
+import logo from '../Images/hero-img-200.png';
 import MobileMenu from './MobileMenu';
 import {FaBars} from 'react-icons/fa';
 
