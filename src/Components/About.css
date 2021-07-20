@@ -1,0 +1,29 @@
+.About{
+    width: 100%;
+    height: auto;
+}
+
+.About_Container{
+    text-align: center;
+    padding: 10rem 0;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.About_Container h1{
+    text-align: center;
+    margin: 3rem 0;
+    width: 100%;
+}
+
+.About_Container p{
+    font-size: clamp(0.75rem, 3.75vw, 1.5rem);
+    font-weight: 200;
+}
+
+@media screen and (min-width:700px){
+    .About_Container p{
+        font-size: clamp(1rem, 1.5vw, 2rem);
+    }
+        
+}

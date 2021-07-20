@@ -21,7 +21,7 @@ function Hero(){
         })
         
         myAnimation
-            .then(setTimeout(timer1,3000));
+            .then(setTimeout(timer1,1200));
 
         return() =>{
             clearTimeout(timer1);
@@ -46,7 +46,7 @@ function Hero(){
                 <h1 className="Hero_TextAnimation_One">
                     <span aria-label={head}>
                         {head.split("").map((char, index) =>{
-                            let style = {animationDelay: `${(0.5 + index / 10)}s`}
+                            let style = {animationDelay: `${(0.2 + index / 20)}s`}
                             return <span
                                 aria-hidden="true"
                                 key={index}
@@ -75,7 +75,7 @@ function Hero(){
                     </div>)
                 ||<div className="Hero_Col_1"></div>}
                 <div className="Hero_Col_2">
-                    <img src={HeroImgSmall}  srcSet={`${HeroImgSmall} 300w, ${HeroImgMedium} 800w, ${HeroImgLarge} 1600w`}
+                    <img src={HeroImgSmall}  srcSet={`${HeroImgSmall} 300w, ${HeroImgMedium} 800w, ${HeroImgLarge} 2250w`}
                         sizes="(min-width:700px), 100vw"
                         alt="img"
                     />
