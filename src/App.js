@@ -3,7 +3,8 @@ import './App.css';
 import Nav from './Components/Nav.js';
 import Hero from './Components/Hero.js';
 import About from './Components/About.js';
-import Stats from './Components/Stats.js'
+import Stats from './Components/Stats.js';
+import Card from './Components/Card.js';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <Hero />
       <About />
       <Stats />
+      <div>
+        <Card />
+      </div>
     </div>
   );
 }

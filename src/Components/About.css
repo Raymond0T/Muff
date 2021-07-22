@@ -19,6 +19,7 @@
 .About_Container p{
     font-size: clamp(0.75rem, 3.75vw, 1.5rem);
     font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media screen and (min-width:700px){
