@@ -41,7 +41,7 @@ function Hero(){
 
     return(
         <div className="Hero">
-            <div className="Hero_Backdrop">
+            <div className={second ? "Hero_Backdrop" : ""} >
                 {first && 
                     <h1 className="Hero_TextAnimation_One">
                         <span aria-label={head}>

@@ -1,0 +1,27 @@
+[
+    {
+        "id" : 1,
+        "title": "Encryption",
+        "description": "With the best and most up-to-date encryption to protect your assets."
+    },
+    {
+        "id" : 2,
+        "title": "Community",
+        "description": "A community that is continuously growing everyday"
+    },
+    {
+        "id" : 3,
+        "title": "Developer",
+        "description": "Open source project for your contribution."
+    },
+    {
+        "id" : 4,
+        "title": "Accessible",
+        "description": "Anyone would have the ability to purchase Muffle Coin without any restrictions."
+    },
+    {
+        "id" : 5,
+        "title": "Future",
+        "description": "Invest now for a better future."
+    }
+]

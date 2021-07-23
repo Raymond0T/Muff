@@ -12,7 +12,7 @@ function Stats(){
             price: ((Math.random()) + 5).toFixed(2)
         })
     }
-    console.log(prices,prices[0].price)
+    //console.log(prices,prices[0].price)
     return(
         <div className="Stats">
             <div className="Stats_Container">
