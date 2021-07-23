@@ -5,6 +5,7 @@ import Hero from './Components/Hero.js';
 import About from './Components/About.js';
 import Stats from './Components/Stats.js';
 import Card from './Components/Card.js';
+import Footer from './Components/Footer.js';
 
 import AppImg from './Images/img-one.png';
 import Data from './Components/Data.json';
@@ -12,7 +13,7 @@ import Data from './Components/Data.json';
 import {RiSecurePaymentLine,RiCommunityLine} from 'react-icons/ri'
 import {MdDeveloperMode} from 'react-icons/md';
 import {IoAccessibilityOutline} from 'react-icons/io5';
-import {GrPlan} from 'react-icons/gr'
+import {BsCalendar} from 'react-icons/bs'
 
 function App() {
   
@@ -21,7 +22,7 @@ function App() {
     2: <RiCommunityLine />,
     3: <MdDeveloperMode />,
     4: <IoAccessibilityOutline />,
-    5: <GrPlan />
+    5: <BsCalendar />
   }
   
   return (
@@ -45,6 +46,8 @@ function App() {
           <img src={AppImg} alt=""/>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

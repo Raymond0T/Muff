@@ -9,7 +9,7 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    background: rgb(229, 224, 230);
+    background: rgb(253, 253, 253);
     padding: 7rem 0;
 }
 .App_Card_Container{
@@ -29,9 +29,15 @@
     width: 100%;
 }
 
+.App_Card_Img h1{
+    font-size: clamp(1.75rem, 2.50vw, 3rem);
+    padding-bottom: 3rem;
+    color: rgb(158, 157, 157);
+}
 .App_Card_Img img{
     max-width: 275px;
     max-height: 350px;
+    filter: drop-shadow(0 0 1rem rgb(121, 119, 119));
 }
 
 @media screen and (min-width:1150px){

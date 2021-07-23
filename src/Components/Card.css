@@ -10,13 +10,22 @@
     justify-content: center;
     padding: 1rem 1rem;
     border-radius: 15px;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 5px 5px 10px rgb(131, 129, 129);
     height: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Card_Container p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .Card_Icon svg{
     width: 125px;
     height: 175px;
+    color: rgb(0, 110, 255);
 }
 
 
