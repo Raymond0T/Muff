@@ -2,17 +2,17 @@
     {
         "id" : 1,
         "title": "Encryption",
-        "description": "With the best and most up-to-date encryption to protect your assets."
+        "description": "The best and most up-to-date encryption to protect against trojans."
     },
     {
         "id" : 2,
         "title": "Community",
-        "description": "A community that is continuously growing everyday"
+        "description": "A large community that is continuously growing everyday."
     },
     {
         "id" : 3,
         "title": "Developer",
-        "description": "Open source project for your contribution."
+        "description": "Open source project for developers."
     },
     {
         "id" : 4,
@@ -22,6 +22,6 @@
     {
         "id" : 5,
         "title": "Future",
-        "description": "Invest now for a better future."
+        "description": "This is the currency for future payments."
     }
 ]

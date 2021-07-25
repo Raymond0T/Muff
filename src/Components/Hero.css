@@ -100,7 +100,7 @@
     font-weight: normal;
 }
 .Hero_Button:hover{
-    background-color: var(--main-color);
+    background-color: rgb(3, 3, 131);
 }
 
 .Hero_Button:hover .Hero_ArrowIcon{

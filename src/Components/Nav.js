@@ -27,7 +27,7 @@ function Nav(){
                 <ul className="Nav_Tab_Container">
                     <li>Home</li>
                     <li>About</li>
-                    <li>Buy Coin</li>
+                    <li>My Wallet</li>
                     <li>Documentation</li>
                 </ul>
             </div>

@@ -8,10 +8,10 @@ function About(){
         <div className="About">
             <div className="About_Container">
                 <h1>What is Muffle Coin?</h1>
-                <p>Muffle coin is a new cryptocurrency that uses peer-to-peer technology to operate with no central
-                    authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by tge network. Muffle coin is open-source; its design
-                    is public, nobody owns or controls Muffle coin and everyone can take part. Through many of its unique properties, Muffle coin allows execiting uses 
-                    that could not be covered by any previous payment system.
+                <p>Muffle coin is the next generation currency that uses new technology to operate without any central
+                    authorities. With easy accessibility, everyone has the ability to purchase with little to no restrictions. Muffle coin
+                    is widely accepted as a form of payment throughout the world. With the most secured encryption and network, it has one of the largest community
+                    supporting it.
                 </p>
             </div>
         </div>

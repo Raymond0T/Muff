@@ -12,7 +12,7 @@ function MobileMenu({menu, toggle}){
                 <ul className="MobileMenu_Tab_Container" onClick={toggle}>
                     <li>Home</li>
                     <li>About</li>
-                    <li>Buy Coin</li>
+                    <li>My Wallet</li>
                     <li>Documentation</li>
                 </ul>
             </div>

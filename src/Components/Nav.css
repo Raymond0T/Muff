@@ -44,7 +44,7 @@
 }
 
 .Nav_Tab_Container li:hover{
-    background-color: var(--main-color);
+    background-color: rgb(150, 151, 151);
 }
 
 
