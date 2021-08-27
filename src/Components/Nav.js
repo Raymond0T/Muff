@@ -5,6 +5,7 @@ import MobileMenu from './MobileMenu';
 import {FaBars} from 'react-icons/fa';
 
 
+import {Link} from 'react-router-dom';
 
 
 
@@ -25,10 +26,14 @@ function Nav(){
                 <FaBars className="Nav_Hamburger" onClick={toggleMenu}/>
                 
                 <ul className="Nav_Tab_Container">
-                    <li>Home</li>
+                    <Link to="/" className="Nav_Tab_Container_Router">
+                        <li>Home</li>
+                    </Link>
                     <li>About</li>
                     <li>My Wallet</li>
-                    <li>Documentation</li>
+                    <Link to="/Login" className="Nav_Tab_Container_Router">
+                        <li>Login</li>
+                    </Link>
                 </ul>
             </div>
        
